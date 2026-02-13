@@ -5,7 +5,7 @@ description: >
   Use when the user asks to create slides, presentations, decks, or talks.
   Triggers on: "create a presentation", "make slides about", "build a deck",
   "generate a talk", "slide deck for", or any request involving presentation creation.
-  Supports code highlighting, fragments, speaker notes, vertical slides, math, markdown,
+  Supports code highlighting, fragments, speaker notes, math, markdown,
   and Mermaid.js diagrams (flowcharts, sequence, class, ER, mindmap, timeline, etc.).
 ---
 
@@ -117,15 +117,6 @@ Use `data-line-numbers="1-2|3-4"` to step through line highlights.
 <section>
   <h2>Architecture</h2>
   <img src="diagram.png" alt="Architecture" style="max-height: 500px;">
-</section>
-```
-
-### Vertical slides (sub-sections, navigate with down arrow)
-```html
-<section>
-  <section><h2>Overview</h2></section>
-  <section><h2>Detail 1</h2></section>
-  <section><h2>Detail 2</h2></section>
 </section>
 ```
 
@@ -424,6 +415,7 @@ Available Mermaid themes: `default`, `dark`, `forest`, `neutral`, `base`.
 - **Limit text**: prefer visuals, short phrases, and keywords over paragraphs
 - **Bold for emphasis**: `<strong>` text renders in the navy accent color automatically
 - **Use `.columns` helper**: for side-by-side layouts instead of inline flex styles
+- **Never use vertical slides**: do not nest `<section>` inside `<section>`. All slides must be flat/horizontal only
 
 ## Config Customization
 

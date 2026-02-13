@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/white.css" id="theme">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-dark.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -67,6 +67,7 @@
 
     .reveal .slides section,
     .reveal .slides section > section {
+      box-sizing: border-box;
       padding: 48px 56px;
       line-height: 1.6;
       text-align: left;
@@ -138,14 +139,14 @@
       color: #555;
     }
 
-    /* --- Tables: corporate/striped --- */
-    .reveal table {
+    /* --- Tables: corporate/striped (scoped to exclude code block tables) --- */
+    .reveal table:not(pre table) {
       width: 100%;
       margin: var(--r-block-margin) 0;
       font-size: 0.82em;
     }
 
-    .reveal table th {
+    .reveal table:not(pre table) th {
       background-color: #1a3c6e;
       color: #ffffff;
       padding: 0.5em 0.8em;
@@ -153,12 +154,12 @@
       border-bottom: 2px solid #1a3c6e;
     }
 
-    .reveal table td {
+    .reveal table:not(pre table) td {
       padding: 0.5em 0.8em;
       border-bottom: 1px solid #dee2e6;
     }
 
-    .reveal table tbody tr:nth-child(even) {
+    .reveal table:not(pre table) tbody tr:nth-child(even) {
       background-color: #f5f7fa;
     }
 
