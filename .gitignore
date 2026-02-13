@@ -1,3 +1,6 @@
 .agents
-.claude
 .playwright
+.claude/*
+!.claude/skills
+.claude/skills/*
+!.claude/skills/revealjs-slides
