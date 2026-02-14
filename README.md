@@ -33,7 +33,6 @@ npx skills add alahmadiq8/skills --list
 ## Awesome Skills Resources
 
 - [anthropics/skills](https://github.com/anthropics/skills) - Official Anthropic skills
-- [github.com/skills](https://github.com/skills) - GitHub Skills
 - [microsoft/skills](https://github.com/microsoft/skills) - Microsoft skills
 - [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) - Anthropic knowledge work plugins
 - [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) - Official Claude plugins
