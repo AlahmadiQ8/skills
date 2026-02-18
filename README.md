@@ -6,6 +6,7 @@ A repository of my vibe coded skills.
 
 | Skill | Description |
 |-------|-------------|
+| **fabric-icons** | Search and fetch official Microsoft Fabric/Azure SVG icons for diagrams, documentation, and UI — includes 175 icons for Lakehouse, Pipeline, Power BI, and other Fabric components. |
 | **hugo** | Quick reference and workflows for Hugo static site generator — site creation, theme development, templating, content management, asset pipeline, and deployment. |
 | **revealjs-slides** | Generate reveal.js HTML slide presentations from topics or outlines, with built-in support for code highlighting, Mermaid.js diagrams, speaker notes, and PDF export. |
 
@@ -20,6 +21,7 @@ npx skills add alahmadiq8/skills
 Install a specific skill:
 
 ```bash
+npx skills add alahmadiq8/skills --skill fabric-icons -a claude-code
 npx skills add alahmadiq8/skills --skill hugo -a claude-code
 npx skills add alahmadiq8/skills --skill revealjs-slides -a claude-code
 ```
