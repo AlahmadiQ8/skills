@@ -6,7 +6,7 @@ A repository of my vibe coded skills.
 
 | Skill | Description |
 |-------|-------------|
-| **fabric-icons** | Search and fetch official Microsoft Fabric/Azure SVG icons for diagrams, documentation, and UI — includes 175 icons for Lakehouse, Pipeline, Power BI, and other Fabric components. |
+| **obsidian** | Edit and manage Obsidian vaults — create, read, update, and delete notes, manage properties/frontmatter, handle links and backlinks, work with tags, tasks, daily notes, templates, bases, and more. Uses the Obsidian CLI for safe vault operations when available, with direct file editing as fallback. |
 | **hugo** | Quick reference and workflows for Hugo static site generator — site creation, theme development, templating, content management, asset pipeline, and deployment. |
 | **revealjs-slides** | Generate reveal.js HTML slide presentations from topics or outlines, with built-in support for code highlighting, Mermaid.js diagrams, speaker notes, and PDF export. |
 
