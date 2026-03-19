@@ -39,3 +39,5 @@ npx skills add alahmadiq8/skills --list
 - [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) - Anthropic knowledge work plugins
 - [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) - Official Claude plugins
 - [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins) - Anthropics Financial Plugins
+- [dotnet/skills](https://github.com/dotnet/skills/)
+- [microsoft/azure-skills](https://github.com/microsoft/azure-skills)
