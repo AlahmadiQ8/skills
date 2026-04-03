@@ -41,3 +41,4 @@ npx skills add alahmadiq8/skills --list
 - [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins) - Anthropics Financial Plugins
 - [dotnet/skills](https://github.com/dotnet/skills/)
 - [microsoft/azure-skills](https://github.com/microsoft/azure-skills)
+- [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)
