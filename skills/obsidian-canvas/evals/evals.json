@@ -1,0 +1,47 @@
+{
+  "skill_name": "obsidian-canvas",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a canvas that maps out a software development lifecycle — go from Ideation through Research, Design, Development, Testing, and Launch. Each stage should have a short description and they should be connected left-to-right showing the flow. Save it to /tmp/test-vault/sdlc-flow.canvas",
+      "expected_output": "A .canvas file with 6 text nodes arranged left-to-right, connected by edges showing the SDLC flow. Each node has a title and brief description.",
+      "files": [],
+      "expectations": [
+        "The output is a valid .canvas file (passes validate_canvas.py)",
+        "There are exactly 6 text nodes for the 6 stages",
+        "There are at least 5 edges connecting consecutive stages",
+        "Nodes are arranged left-to-right (x values increase for each stage)",
+        "Each node contains a markdown heading with the stage name",
+        "Edge flow goes from each stage to the next in sequence"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I have these notes in my vault: machine-learning.md, neural-networks.md, gradient-descent.md, backpropagation.md, transformers.md, and attention-mechanism.md. Create a canvas that organizes them as a concept map — group the fundamentals (gradient descent, backpropagation) together, and the architecture concepts (transformers, attention) together, with machine learning as the central hub. Save to /tmp/test-vault/ml-concepts.canvas",
+      "expected_output": "A .canvas file with file nodes referencing the vault notes, organized as a hub-and-spoke concept map with two groups.",
+      "files": [],
+      "expectations": [
+        "The output is a valid .canvas file (passes validate_canvas.py)",
+        "There are 6 file nodes referencing the vault notes",
+        "There are at least 2 group nodes (fundamentals and architecture)",
+        "The machine-learning.md node is central (not inside either group)",
+        "Edges connect the central hub to each topic node",
+        "File node paths match the note names given"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Build me a comparison canvas for choosing a database: PostgreSQL, MongoDB, and Redis. For each one, create a text card with pros and a text card with cons, and group each database's cards together. Also add a text card at the top as a title/summary. Add some color coding — green for the groups, red for cons cards, cyan for pros cards. Save to /tmp/test-vault/db-comparison.canvas",
+      "expected_output": "A .canvas file with grouped database comparisons using color-coded cards.",
+      "files": [],
+      "expectations": [
+        "The output is a valid .canvas file (passes validate_canvas.py)",
+        "There are 3 group nodes (one per database)",
+        "There are at least 6 text nodes for pros/cons (2 per database)",
+        "There is a title/summary text node",
+        "Color coding is used (green '4' for groups, red '1' for cons, cyan '5' for pros)",
+        "Pros and cons cards are positioned within their database group's bounds"
+      ]
+    }
+  ]
+}
