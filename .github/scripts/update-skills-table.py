@@ -41,7 +41,7 @@ def parse_frontmatter(filepath):
         )
 
     if name and description:
-        return {"name": name, "description": description}
+        return {"name": name, "description": description, "dir": Path(filepath).parent.name}
     return None
 
 
@@ -52,7 +52,8 @@ def build_table(skills):
         "|-------|-------------|",
     ]
     for skill in sorted(skills, key=lambda s: s["name"]):
-        lines.append(f"| **{skill['name']}** | {skill['description']} |")
+        link = f"./skills/{skill['dir']}/SKILL.md"
+        lines.append(f"| [**{skill['name']}**]({link}) | {skill['description']} |")
     return "\n".join(lines)
 
 
